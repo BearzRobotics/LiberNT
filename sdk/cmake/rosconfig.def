@@ -343,6 +343,86 @@ config RDPSERVER_CONFIG_DIR
 
 endmenu
 
+menu "Filesystem drivers"
+
+config ENABLE_FS_BTRFS
+    prompt "Btrfs filesystem"
+    type bool
+    default n
+    help
+      Build the WinBtrfs filesystem driver.
+
+config ENABLE_FS_CDFS
+    prompt "ISO 9660 CD-ROM filesystem"
+    type bool
+    default y
+
+config ENABLE_FS_EXFAT
+    prompt "exFAT filesystem"
+    type bool
+    default y
+
+config ENABLE_FS_EXT2
+    prompt "Ext2 filesystem"
+    type bool
+    default n
+
+config ENABLE_FS_FASTFAT
+    prompt "FAT filesystem (FastFAT)"
+    type bool
+    default y
+
+config ENABLE_FS_FS_REC
+    prompt "Filesystem recognizer"
+    type bool
+    default y
+
+config ENABLE_FS_MSFS
+    prompt "Mailslot filesystem"
+    type bool
+    default y
+
+config ENABLE_FS_MUP
+    prompt "Multiple UNC Provider"
+    type bool
+    default y
+
+config ENABLE_FS_NFS
+    prompt "NFS filesystem"
+    type bool
+    default y
+
+config ENABLE_FS_NPFS
+    prompt "Named Pipe Filesystem"
+    type bool
+    default y
+
+config ENABLE_FS_NTFS
+    prompt "NTFS filesystem (legacy)"
+    type bool
+    default n
+    help
+      Build the legacy NTFS filesystem driver.
+
+config ENABLE_FS_NTFS_NEW
+    prompt "NTFS filesystem (new implementation)"
+    type bool
+    default y
+    help
+      Build the newer NTFS filesystem driver.
+
+config ENABLE_FS_UDFS
+    prompt "UDF filesystem"
+    type bool
+    default y
+
+config ENABLE_FS_VFATFS
+    prompt "VFAT filesystem"
+    type bool
+    default y
+
+endmenu
+
 menu "Graphics"
 
 config MESA_GALLIUM_FROM_SOURCE

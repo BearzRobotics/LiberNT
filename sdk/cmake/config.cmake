@@ -279,6 +279,21 @@ option(ENABLE_RT2800USB "Whether to build the Ralink RT2870/RT2770 USB Wi-Fi dri
 
 option(ENABLE_RTW8852BS "Whether to build the Realtek RTL8852BS SDIO Wi-Fi driver." OFF)
 
+option(ENABLE_FS_BTRFS   "Build Btrfs"   OFF)
+option(ENABLE_FS_CDFS    "Build CDFS"    ON)
+option(ENABLE_FS_EXFAT   "Build exFAT"   ON)
+option(ENABLE_FS_EXT2    "Build Ext2"    OFF)
+option(ENABLE_FS_FASTFAT "Build FastFAT" ON)
+option(ENABLE_FS_FS_REC  "Build Fs_Rec"  ON)
+option(ENABLE_FS_MSFS    "Build MSFS"    ON)
+option(ENABLE_FS_MUP     "Build MUP"     ON)
+option(ENABLE_FS_NFS     "Build NFS"     OFF)
+option(ENABLE_FS_NPFS    "Build NPFS"    ON)
+option(ENABLE_FS_NTFS     "Build legacy NTFS filesystem driver" OFF)
+option(ENABLE_FS_NTFS_NEW "Build new NTFS filesystem driver"    ON)
+option(ENABLE_FS_UDFS    "Build UDFS"    ON)
+option(ENABLE_FS_VFATFS  "Build VFATFS"  ON)
+
 set(RDPSERVER_DIR "" CACHE PATH
     "MinGW build of the RDP console server (install directory) to stage into the live and preinstalled images")
 set(RDPSERVER_CONFIG_DIR "" CACHE PATH
